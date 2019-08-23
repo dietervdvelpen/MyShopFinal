@@ -53,6 +53,10 @@
     <Compile Include="Migrations\201908231140540_Initial.Designer.cs">
       <DependentUpon>201908231140540_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908231301090_AddCustomer.cs" />
+    <Compile Include="Migrations\201908231301090_AddCustomer.Designer.cs">
+      <DependentUpon>201908231301090_AddCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLRepository.cs" />
@@ -70,6 +74,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201908231140540_Initial.resx">
       <DependentUpon>201908231140540_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908231301090_AddCustomer.resx">
+      <DependentUpon>201908231301090_AddCustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
