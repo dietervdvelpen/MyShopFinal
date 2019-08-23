@@ -83,7 +83,7 @@ namespace MyShop.WebUI.Models
         [Required]
         public string FirstName { get; set; }
         [Required]
-        public string LastName { get; set; }
+        public string SurName { get; set; }
         [Required]
         public string Street { get; set; }
         [Required]

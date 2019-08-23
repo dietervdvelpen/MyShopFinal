@@ -159,7 +159,7 @@ namespace MyShop.WebUI.Controllers
                         City = model.City,
                         Email = model.Email,
                         FirstName = model.FirstName,
-                        LastName = model.LastName,
+                        SurName = model.SurName,
                         State = model.State,
                         Street = model.Street,
                         ZipCode = model.ZipCode,

@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace MyShop.Core.Models
 {
-    public class Customer: BaseEntity
+    public class Order: BaseEntity
     {
-        public string UserId { get; set; }
+        public Order()
+        {
+            this.OrderItems = new List<OrderItem>();
+        }
+
         public string FirstName { get; set; }
         public string SurName { get; set; }
         public string Email { get; set; }
@@ -16,5 +20,7 @@ namespace MyShop.Core.Models
         public string City { get; set; }
         public string State { get; set; }
         public string ZipCode { get; set; }
+        public string OrderStatus { get; set; }
+        public virtual ICollection<OrderItem> OrderItems { get; set; }
     }
 }
